@@ -1,0 +1,28 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.container {
+    background-color: lightblue;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows:  1fr 4fr;
+}
+
+.sidebar {
+    grid-row: 1 / 3;
+    background-color: #1992d4;
+}
+
+.header {
+    grid-row: 1 / 2;
+    background-color: #ffffff;
+}
+
+.content {
+    grid-column: 2 / 3;
+    background-color: #e2e8f0;
+}
