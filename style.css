@@ -1,13 +1,14 @@
 :root {
     --primary-color:#e5e7eb;
     --secondary-color:#0e7490;
-    --tertiary-color: #f8fafc;;
+    --tertiary-color: #f8fafc;
+    --quaternary-color: #fde047;
 }
 
 html, body {
     margin: 0;
     padding: 0;
-    height: 100vh;
+   height: 100vh;
 }
 
 .container {
@@ -22,6 +23,10 @@ html, body {
     grid-row: 1 / 2;
     background-color: var(--tertiary-color);
     box-shadow: 0 1px 5px gray;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .content {
@@ -88,7 +93,7 @@ html, body {
     display: flex;
     justify-content: center;
     gap: 100px;
-    padding: 10px;
+    padding-top: 8px;
 }
 
 .header-top img {
@@ -97,7 +102,7 @@ html, body {
 }
 
 .user-icon {
-    background-color: yellow;
+    background-color: var(--quaternary-color);
     border-radius: 50%;
     height: 25px;
     width: 25px;
@@ -108,12 +113,89 @@ html, body {
     display: flex;
     justify-content: center;
     gap: 10px;
+    
 }
 
 .right img {
-    top: 40px;
+    position: relative;
+    top: 8px;
 }
 
 .right p {
     font-size: .5rem;
+    font-weight: bold;
+}
+.left {
+    display: flex;
+    position: relative;
+    gap: 8px;
+    top: 5px;
+}
+.left input {
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 7px;
+    width: 210px;
+    height: 10px;
+}
+   
+.left img {
+    position: relative;
+    top: 1px;
+}
+
+input:focus {
+    outline: none;
+    background-color: #bae6fd;
+    opacity: 0.4;
+}
+
+input[type="text"] {
+    font-size: 8px;
+}
+
+.main-user-icon {
+    background-color: var(--quaternary-color);
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+
+.header-bottom {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.b-left {
+    display: flex;
+    gap: 5px;
+}
+
+.b-left p {
+    position: relative;
+    top: 5px;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.b-right button {
+    position: relative;
+    border: none;
+    background-color: var(--secondary-color);
+    color: var(--tertiary-color);
+    border-radius: 10px;
+    font-size: 8px;
+    height: 20px;
+    width: 40px;
+    top: 10px;
+}
+
+.b-right button:active {
+    background-color: #bae6fd;
+}
+button:hover {
+    background-color:#0284c7;
 }
